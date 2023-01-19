@@ -29,6 +29,7 @@ const MainPresenter = ({ writeGenensis }) => {
   }
   `;
   const [genesisJson, setGenesisJson] = useState(defaultGenesis);
+  console.log(genesisJson);
   /* Functions */
   /* Hooks */
   /* Render */

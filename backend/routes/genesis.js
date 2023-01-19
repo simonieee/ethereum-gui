@@ -20,6 +20,7 @@ const makeFolder = (dir) => {
 router.post("/", (req, res, next) => {
   const title = "genesis.json";
   const genesis = req.body.genesis;
+  console.log(JSON.stringify(genesis));
   makeFolder(fileDir);
   fs.writeFile(fileDir + "/" + title, JSON.stringify(genesis), (err) => {
     if (err) {
@@ -27,6 +28,7 @@ router.post("/", (req, res, next) => {
       res.status(500).send({ sussess: false });
     }
   });
+  console.log(req.body.genesis);
   res.status(200).json({ sussess: true });
 });
 

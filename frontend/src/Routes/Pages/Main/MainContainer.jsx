@@ -7,20 +7,14 @@ const MainContainer = () => {
   const writeGenensis = async (genesisInfo) => {
     try {
       const url = "http://localhost:3001/genesis";
-      fetch(url, {
-        method: "post",
-        body: JSON.stringify({
-          genesis: genesisInfo,
-        }),
-      })
-        .then((res) => res.json())
-        .then((res) => {
-          if (res.success) {
-            console.log("파일 생성완료");
-          }
-        });
+      const response = await fetch(url, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ genesis: JSON.parse(genesisInfo) }),
+      });
+      const data = await response.json();
+      console.log(data);
     } catch (error) {
-      console.log(error);
       return false;
     }
   };
