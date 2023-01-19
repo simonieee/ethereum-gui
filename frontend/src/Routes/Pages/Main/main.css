@@ -1,0 +1,14 @@
+.main-content-container {
+  padding: 30px;
+}
+
+.main-content-container h3 {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
