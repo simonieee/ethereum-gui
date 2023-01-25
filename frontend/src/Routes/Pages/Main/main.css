@@ -5,10 +5,95 @@
 .main-content-container h3 {
   margin-left: 5px;
   margin-bottom: 10px;
+  margin-top: 10px;
+  color: #1976d2;
 }
 
 .btn-container {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.element-container {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.element-container .pwd-element {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 5px;
+  width: 100%;
+}
+
+.element-container .pwd-element > h4 {
+  margin-right: 20px;
+  width: 200px;
+}
+
+.element-container .pwd-element .pwd-btn-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pwd-result {
+  display: flex;
+  align-items: center;
+  color: #f00;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.setting-component > h4 {
+  margin-left: 10px;
+  margin-bottom: 5px;
+  color: #1976d2;
+}
+
+.setting-component-container {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.setting-component-container > hr {
+  margin: 10px 0;
+  border: 0;
+  border-bottom: 1px solid rgb(239, 239, 239);
+}
+
+.setting-component-container .setting-element {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-top: 5px;
+  width: 100%;
+}
+
+.setting-component-container .setting-element > h5 {
+  margin-right: 20px;
+  width: 200px;
+}
+
+.setting-component-container .setting-element .element-feild {
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
